@@ -1,4 +1,4 @@
-# DIDI-SSI-Server-functional-test
+# cencosud-be-functional-test
 Libreria para la automatización de llamados API REST utilizando AXIOS para los llamados https. La misma maneja los llamados GET POST DELETE PATCH
 #### install 
 ```
