@@ -15,13 +15,17 @@ When('I send POST request to Metro {}', async function (path) {
 });
 
 When('I send GET request to Wong {}', async function (path) {
-    if (path.includes("recommendations")) {
-    this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL_WONG_DEV}${path}`);
-    }
-    else{
+
+//    if (path.includes("recommendations")) {
+//    this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL_WONG_DEV}${path}`);
+//    }
+//    else if (path.includes("search")) {
+//    this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL_WONG_DEV}${path}`);
+//  } 
+//    else{
         this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL_WONG}${path}`);
-    }
-});
+//    }
+}); 
 
 When('I send PUT request to Wong {}', async function (path) {
     this.context['response'] = await restHelper.putData(`${process.env.SERVICE_URL_WONG}${path}`, this.context['request']);

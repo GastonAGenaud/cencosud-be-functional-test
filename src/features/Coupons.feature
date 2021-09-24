@@ -6,7 +6,7 @@ Feature: Coupons Routes
 
   Scenario Outline: use coupons
     Given A request <request>
-    When I send POST request to Metro /coupons-dev/useCoupons
+    When I send POST request to Metro DEV /coupons-dev/useCoupons
     Then I get response code 200
 
     Examples:

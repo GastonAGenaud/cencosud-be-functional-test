@@ -6,7 +6,7 @@ Feature: Search Routes
 
   Scenario Outline: Check the health of service
     Given A request <body>
-    When I send GET request to Wong /health 
+    When I send GET request to Wong /search/health 
     Then I get response code 200
 
     Examples:
@@ -15,7 +15,7 @@ Feature: Search Routes
 
   Scenario Outline: Obtain Top search by quantity 
     Given A request <body>
-    When I send GET request to Wong /topSearchs?quantity=8
+    When I send GET request to Wong /search/topSearchs?quantity=8
     Then I get response code 200
     Examples:
       | body |
